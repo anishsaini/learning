@@ -8,8 +8,7 @@ import Button from "./components/Button.jsx"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Button />
-    <Button/>
+    
     <App />
   </React.StrictMode>
 );
