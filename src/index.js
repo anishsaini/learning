@@ -8,10 +8,12 @@ import State from './components/hooks/usestate.jsx';
 import Effect from './components/hooks/useeffect.jsx';
 import Ref from './components/hooks/ref.jsx';
 import Memo from './components/hooks/usememo.jsx';
+import Callback from './components/hooks/usecallback.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Memo/>
+  <Callback/>
+    // <Memo/>
     // <Ref/>
     // <Effect/>
     // <State/>

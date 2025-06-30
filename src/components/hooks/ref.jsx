@@ -15,6 +15,7 @@ const Ref = () => {
         console.log(click.current.value)
         click.current.style.background = "red"
     }
+    console.log("Ref component rendered")
 
   return (
     <div className="App">
@@ -30,4 +31,4 @@ const Ref = () => {
 }
 
 
-export default Ref;
+export default React.memo(Ref);
