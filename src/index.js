@@ -7,10 +7,12 @@ import reportWebVitals from './reportWebVitals';
 import State from './components/hooks/usestate.jsx';
 import Effect from './components/hooks/useeffect.jsx';
 import Ref from './components/hooks/ref.jsx';
+import Memo from './components/hooks/usememo.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Ref/>
+    <Memo/>
+    // <Ref/>
     // <Effect/>
     // <State/>
     // <App /> 
