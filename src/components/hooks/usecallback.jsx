@@ -7,12 +7,12 @@ const Callback = () => {
         setCounter(counter+1)
     }
 
-    const newfn = useCallback((counter) => {}, [counter]); // when [counter] is change callback will be called
+    const newfn = useCallback((counter) => {}, [counter]); // when [counter] is change callback will be called and re render the component
   return (
     
     <div className='App'>
-        <Ref newfn={newfn}/>      // and re render the component
-      <h1>Counter: {counter}</h1>
+        <Ref newfn={newfn}/>       
+      <h1>Counter: {counter}</h1> 
       <button onClick={value} >ADD</button>
     </div>
   );

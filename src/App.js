@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import { useContext } from 'react';
+import { Appcontext } from './components/hooks/usecontext';
 
 function App() {
 //   const [Car, setCar] = useState({
@@ -18,6 +20,7 @@ function App() {
     const Increment=()=>{
       setCounter(counter+4)
     }
+    const name = useContext(Appcontext);
 
   return (
     <div className="App">
@@ -29,6 +32,7 @@ function App() {
 
       <h1>Count: {counter} </h1>
       <button onClick={Increment}>Increment</button>
+      <h2>name: {name}</h2>
     </div>
   );
 }

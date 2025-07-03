@@ -9,15 +9,22 @@ import Effect from './components/hooks/useeffect.jsx';
 import Ref from './components/hooks/ref.jsx';
 import Memo from './components/hooks/usememo.jsx';
 import Callback from './components/hooks/usecallback.jsx';
+import Contex from './components/hooks/usecontext.jsx';
+import Calling from './api/calling.jsx';
+import Card from './components/modules/card.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Callback/>
+    <Card />
+    // <Calling/>
+    // <Callback/>
     // <Memo/>
     // <Ref/>
     // <Effect/>
     // <State/>
-    // <App /> 
+    // <Contex>
+    //   <App />
+    // </Contex>
 
 );
 
